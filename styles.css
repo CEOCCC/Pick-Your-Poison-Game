@@ -1,1 +1,184 @@
 
+/* General Styles */
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0d0d0f;
+  color: #f5f5f5;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Header */
+header {
+  padding: 20px 0;
+  background-color: #121212;
+  border-bottom: 2px solid #1db954;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin-top: 10px;
+  color: #1db954;
+}
+
+/* Intro Section */
+#intro {
+  margin-top: 5vh;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin: 20px auto;
+  max-width: 600px;
+  color: #ccc;
+}
+
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  margin: 10px;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #1db954, #39ff14);
+  color: #0d0d0f;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #39ff14, #1db954);
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background: #1a1a1a;
+  color: #f5f5f5;
+  border: 1px solid #1db954;
+}
+
+.btn-secondary:hover {
+  background: #1db954;
+  color: #0d0d0f;
+}
+
+/* Game Section */
+#game {
+  margin-top: 6vh;
+  padding-bottom: 30px;
+}
+
+#game h2 {
+  font-size: 2rem;
+  color: #1db954;
+  margin-bottom: 25px;
+}
+
+.prompt-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.prompt {
+  background: #1a1a1a;
+  border: 1px solid #1db954;
+  border-radius: 8px;
+  padding: 20px;
+  font-size: 1.2rem;
+  width: 80%;
+  max-width: 500px;
+  color: #fff;
+  transition: background 0.3s;
+}
+
+.prompt:hover {
+  background: #222;
+}
+
+.vs {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #39ff14;
+}
+
+/* How-To Section */
+#how-to {
+  max-width: 600px;
+  margin: 5vh auto;
+  text-align: left;
+  background-color: #141414;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #1db954;
+}
+
+#how-to h2 {
+  color: #1db954;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+  background-color: #121212;
+  padding: 15px;
+  border-top: 2px solid #1db954;
+}
+
+.footer-menu {
+  margin-bottom: 8px;
+}
+
+.footer-menu label {
+  margin-right: 8px;
+}
+
+select {
+  background: #1a1a1a;
+  color: #f5f5f5;
+  border: 1px solid #1db954;
+  border-radius: 5px;
+  padding: 5px 10px;
+  outline: none;
+}
+
+select:hover {
+  border-color: #39ff14;
+}
+
+/* Hidden Sections */
+.hidden {
+  display: none;
+}
+
+/* Animations */
+section {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+section.hidden {
+  opacity: 0;
+}
