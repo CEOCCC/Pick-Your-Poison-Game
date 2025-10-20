@@ -1,1 +1,67 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pick Your Poison</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="Main Event Logo.png" type="image/png">
+</head>
+<body>
+  <header>
+    <img src="Main Event Logo.png" alt="Main Event Logo" class="logo" />
+    <h1>Pick Your Poison</h1>
+  </header>
+
+  <main>
+    <section id="intro">
+      <p class="tagline">
+        The game that tests your morals, humor, and sanity — one impossible choice at a time.
+      </p>
+      <button id="play-btn" class="btn-primary">Play Now</button>
+      <button id="how-to-btn" class="btn-secondary">How to Play</button>
+    </section>
+
+    <section id="game" class="hidden">
+      <h2>Would You Rather...</h2>
+
+      <div class="prompt-container">
+        <p id="prompt-a" class="prompt"></p>
+        <p class="vs">OR</p>
+        <p id="prompt-b" class="prompt"></p>
+      </div>
+
+      <div class="buttons">
+        <button id="refresh-btn" class="btn-primary">Pick Again</button>
+        <button id="new-pack-btn" class="btn-secondary">Switch Pack</button>
+      </div>
+    </section>
+
+    <section id="how-to" class="hidden">
+      <h2>How to Play</h2>
+      <p>
+        1. Choose your poison — select between two wild, twisted, or hilarious scenarios.<br>
+        2. Debate, defend, or dare your friends to pick their side.<br>
+        3. Switch between packs for different vibes (PG‑13, Mature, or R‑rated).<br><br>
+        Ready to find out how far you'd go?
+      </p>
+      <button id="back-btn" class="btn-primary">Back to Game</button>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-menu">
+      <label for="rating-select">Content Rating:</label>
+      <select id="rating-select">
+        <option value="pg13">PG‑13</option>
+        <option value="mature">Mature</option>
+        <option value="r">R</option>
+      </select>
+    </div>
+    <p>© 2025 Main Event Enterprises LLC</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
